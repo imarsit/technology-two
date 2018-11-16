@@ -1,0 +1,14 @@
+extends layout
+
+block vars
+	- title = message
+
+block content
+	include lib/banner
+	div.layui-row.error
+		div.stack
+			img(src='/public/images/error.png')
+			h1= message
+			h2= status
+			a.layui-btn(href=(url ? url : '/')) 确定
+

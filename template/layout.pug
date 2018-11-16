@@ -1,0 +1,31 @@
+doctype html
+html
+	head
+		block vars
+
+		if title
+			title #{title} - #{site ? site.title : ''}
+		else
+			title #{site ? site.title : ''}
+
+		meta(name='keywords', content=keywords || site.keywords)
+		meta(name='description', content=description || site.description)
+
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		meta(name='renderer', content='webkit')
+		<link rel="stylesheet" type="text/css" href="/public/stylesheets/style.css"/>
+
+		script(type='text/javascript', src='/public/javascripts/jquery-1.11.2.min.js')
+		
+
+
+
+
+
+
+	body
+		include lib/head
+		block content
+		include lib/footer
+	script(type='text/javascript', src='/public/javascripts/public.js')
+	block script

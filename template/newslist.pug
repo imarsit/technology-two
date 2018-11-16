@@ -1,0 +1,69 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    #banner.spch(style="background-image: url('/public/images/newslist/54d4873f63781.jpg')")
+        .side-nav
+            a.toggle(href='javascript:;', toggle-status='close')
+                | MENU 
+                i.fa.fa-navicon
+            ul.nav
+                li
+                    a(href='javascript:;') 媒体报道
+                li
+                    a(href='javascript:;') 集团动态
+                li
+                    a(href='javascript:;') 行业动态
+                li
+                    a(href='/') 清谷科技首页
+                li
+                    a.gotop(href='javascript:;')
+                        i.fa.fa-angle-up
+    .sub-main
+        .container
+            .heading01
+                .line
+                h2
+                    span.en.gr COMPANY NEWS
+                    span.ch
+                        | 集团
+                        b.red 动态
+            .sub005
+                .sub-news-contain
+                    .sub-news-slider
+                        .co.clearfix
+                            .img.zoom
+                                a(href='javascript:;')
+                                    img(src='/public/images/newslist/56dff404b7d16.jpg')
+                            .box-sub-news
+                                .bl
+                                .bm.clearfix
+                                    h2 集团总裁宣布：旗下清谷科技金融获批基金代销牌照
+                                    .desc
+                                        p  导语：隶属清谷科技投资控股集团的清谷科技投资基金管理（北京）有限公司，于2014年12月15上海市长江路120号。 
+                                    a.more(href='javascript:;') MORE
+                        .co.clearfix
+                            .img.zoom
+                                a(href='javascript:;')
+                                    img(src='/public/images/newslist/56dff404b7d16.jpg')
+                            .box-sub-news
+                                .bl
+                                .bm.clearfix
+                                    h2 清谷科技基金本月15日启动迁址
+                                    .desc
+                                        p  导语：隶属清谷科技投资控股集团的清谷科技投资基金管理（北京）有限公司，于2014年12月15上海市长江路120号。 
+                                    a.more(href='javascript:;') MORE
+
+block script 
+    script.
+        $(document).ready(function(){
+        $('.sub-news-slider').bxSlider({
+            pager: false,
+            infiniteLoop: false,
+            responsive: true,
+            nextText: '<i class="fa fa-angle-right"></i>',
+            prevText: '<i class="fa fa-angle-left"></i>',
+        });
+        });

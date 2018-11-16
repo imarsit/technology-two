@@ -1,0 +1,115 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    #banner.spch(style="background-image: url('/public/images/honor/54d4873280f33.jpg')")
+        .side-nav
+            a.toggle(href='javascript:;', toggle-status='close')
+                | MENU 
+                i.fa.fa-navicon
+            ul.nav
+                li
+                    a(href='javascript:;') 集团简介
+                li
+                    a(href='javascript:;') 集团风采
+                li
+                    a(href='javascript:;') 荣誉资质
+                li
+                    a(href='javascript:;') 联盟合作
+                li
+                    a(href='javascript:;') 公司名片
+                li
+                    a(href='/') 清谷科技首页
+                li
+                    a.gotop(href='javascript:;')
+                        i.fa.fa-angle-up
+    #main1
+        .container
+            .border-radius
+            .heading01
+                .line
+                h2
+                    span.en.gr HONOR AND QUALIFICATION
+                    span.ch
+                        | 荣誉
+                        b.red 资质
+        #box-content
+            .container
+                .slider_content_1
+                    .col-xs-12.col-sm-12.col-md-9
+                        .owl-carousel
+                            .item(data-hash='item1')
+                                .col-sm-12
+                                    .row
+                                        .col-xs-12.col-sm-6
+                                            .img.zoom
+                                                a(href='')
+                                                    img(src='/public/images/honor/569dff2f8becf.png')
+                                        .col-xs-12.col-sm-6
+                                            .dot
+                                            .text-content
+                                                h2 清谷科技商学院
+                                                span(style='font-family:Microsoft YaHei;font-size:16px;')
+                                                    | 清谷科技商学院是清谷科技投资控股集团有限公司下属职能部门，主要以提升公司员工素质为己任，以满足公司金融人才需求为目标而设立。在集团内部进行员工培训，不仅能提升员工的专业素质工作技能，同时还能强化企业文化与战略思想，提升员工的凝聚力和战斗力。
+                            .item(data-hash='item2')
+                                .col-sm-12
+                                    .row
+                                        .col-xs-12.col-sm-6
+                                            .img.zoom
+                                                a(href='')
+                                                    img(src='/public/images/honor/569dff2f8becf.png')
+                                        .col-xs-12.col-sm-6
+                                            .dot
+                                            .text-content
+                                                h2 互联网金融产业信用联盟理事会
+                                                p
+                                                    span(style='font-size:16px;')
+                                                        span(style='font-family:Microsoft YaHei;') 财聚财富，富贵永传——清谷科技财富将坚持专注于以客观公正的角度，为客户遴选或者量身定制最佳的投资品种和最优财富管理方案，全新帮助客户实现财源广进，富贵永传。
+                                                p
+                                                    span(style="font-family: 'Microsoft YaHei'; font-size: 16px;") （清谷科技财富曾用名“九源财富”）
+                    .col-xs-12.col-sm-12.col-md-3
+                        .slider-list-contain
+                            ul.slider-list
+                                li
+                                    a.button.secondary.url(href='#item1') 清谷科技商学院
+                                li
+                                    a.button.secondary.url(href='#item2') 互联网金融产业信用联盟理事会
+                .clearfix
+                .page
+                    ul
+
+
+block script
+    script.
+        $(document).ready(function(){
+                $(".owl-carousel").owlCarousel({
+                    nav:false,
+                    items:1,
+                    loop:false,
+                    center:true,
+                    margin:10,
+                    URLhashListener:true,
+                    autoplayHoverPause:true,
+                    autoplay: false,
+                    startPosition: 'URLHash'
+                });
+                $('.slider-list').bxSlider({
+                    mode: 'vertical',
+                    minSlides: 6,
+                    maxSlides: 6,
+                    responsive: true,
+                    slideMargin: 0,
+                    infiniteLoop: false,
+                    nextText: '<i class="fa fa-angle-down"></i>',
+                    prevText: '<i class="fa fa-angle-up"></i>',
+                    pager: false,
+                });
+            $('.slider-list li').click(function(){
+                $(".slider-list li").each(function(){
+                    $(this).removeClass("active");
+                });
+            $(this).addClass("active");
+            });
+        });

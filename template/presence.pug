@@ -1,0 +1,65 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    #banner.spch(style="background-image: url('/public/images/presence/54d4873280f33.jpg')")
+        .side-nav
+            a.toggle(href='javascript:;', toggle-status='close')
+                | MENU 
+                i.fa.fa-navicon
+            ul.nav
+                li
+                    a(href='javascript:;') 集团简介
+                li
+                    a(href='javascript:;') 集团风采
+                li
+                    a(href='javascript:;') 荣誉资质
+                li
+                    a(href='javascript:;') 联盟合作
+                li
+                    a(href='javascript:;') 公司名片
+                li
+                    a(href='/') 清谷科技首页
+                li
+                    a.gotop(href='javascript:;')
+                        i.fa.fa-angle-up
+    .main3
+        .container
+            .heading01
+                .line
+                h2
+                    span.en.gr COMPANY PRESENCE
+                    span.ch
+                        | 集团
+                        b.red 风采
+            .carousel-contain
+                #icarousel
+                    .slide(slide-index='0')
+                        a.over(href='javascript:;')
+                        img(src='/public/images/presence/logo.png')
+                    .slide(slide-index='1')
+                        a.over(href='javascript:;')
+                        img(src='/public/images/presence/logo.png')
+                    .slide(slide-index='2')
+                        a.over(href='javascript:;')
+                        img(src='/public/images/presence/logo.png')
+                    .slide(slide-index='3')
+                        a.over(href='javascript:;')
+                        img(src='/public/images/presence/logo.png')
+            .desc-slider-container
+                .desc-slider
+                    .desc(style='text-align:left')
+                        h1 清谷科技财富资产管理（北京）有限公司
+                        p 财聚清谷科技，富贵永传——清谷科技财富将坚持专注于以客观公正的角度，为客户遴选或者量身定制最佳的投资品种和最优财富管理方案，全新帮助客户实现财源广进，富贵永传。
+                    .desc(style='text-align:left')
+                        h1 清谷科技投资基金管理（北京）有限公司
+                        p 清谷科技投资基金管理（北京）有限公司隶属于清谷科技投资控股集团有限公司，是清谷科技投资体系的核心组成部分，以发起设立股权投资基金、基金管理、并为发展型企业提供资金和增值等服务的专业性投资基金管理机构。
+                    .desc(style='text-align:left')
+                        h1 清谷科技普惠基金管理有限公司
+                        p 清谷科技普惠二级市场业务组建于2012年， 截止目前清谷科技普惠累积资产管理规模已达7亿元人民币。
+                    .desc(style='text-align:left')
+                        h1 清谷科技金融信息服务（北京）有限公司
+                        p 清谷科技金融信息服务（北京）有限公司是清谷科技投资控股集团有限公司旗下的在线投资理财服务平台，由拥有深厚学术背景及多年行业经验的金融精英联手打造，注册资金5000万元。
+

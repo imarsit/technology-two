@@ -1,0 +1,146 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    #banner.spch(style="background-image: url('/public/images/cooper/54d4873280f33.jpg')")
+        .side-nav
+            a.toggle(href='javascript:;', toggle-status='close')
+                | MENU 
+                i.fa.fa-navicon
+            ul.nav
+                li
+                    a(href='javascript:;') 集团简介
+                li
+                    a(href='javascript:;') 集团风采
+                li
+                    a(href='javascript:;') 荣誉资质
+                li
+                    a(href='javascript:;') 联盟合作
+                li
+                    a(href='javascript:;') 公司名片
+                li
+                    a(href='/') 清谷科技首页
+                li
+                    a.gotop(href='javascript:;')
+                        i.fa.fa-angle-up
+    #main1
+        .container
+            .border-radius
+            .heading01
+                .line
+                h2
+                    span.en.gr ALLIANCE COOPERATION
+                    span.ch
+                        | 联盟
+                        b.red 合作
+    #lmhz
+        .container
+            .lmhz-slider-contain
+                .lmhz-slider
+                    .lmhz-box
+                        .lmhz-item.it1
+                            .lmhz
+                                img(src='/public/images/cooper/54d1827b3fe75.jpg')
+                                span 民生银行
+                            a.border(href='javascript:;')
+                        .lmhz-item.it2
+                            .lmhz
+                                img(src='/public/images/cooper/54d1820c36775.jpg')
+                                span 建设银行
+                            a.border(href='javascript:;')
+                        .lmhz-item.it3
+                            .lmhz
+                                img(src='/public/images/cooper/54d181d2b9caa.jpg')
+                                span 工商银行
+                            a.border(href='javascript:;')
+                        .lmhz-item.it4
+                            .lmhz
+                                img(src='/public/images/cooper/54d180f6edecd.jpg')
+                                span 硕士研修网...
+                            a.border(href='javascript:;')
+                        .lmhz-item.it5
+                            .lmhz
+                                img(src='/public/images/cooper/54d18081701a1.jpg')
+                                span 工业研究所...
+                            a.border(href='javascript:;')
+                        .lmhz-item.it6
+                            .lmhz
+                                img(src='/public/images/cooper/54d17fd962ce6.jpg')
+                                span 经济研究所...
+                            a.border(href='javascript:;')
+                        .lmhz-item.it7
+                            .lmhz
+                                img(src='/public/images/cooper/54d183599192c.jpg')
+                                span 国信证券
+                            a.border(href='javascript:;')
+                        .lmhz-item.it8
+                            .lmhz
+                                img(src='/public/images/cooper/54d1831bc26a6.jpg')
+                                span UBS
+                            a.border(href='javascript:;')
+                        .lmhz-item.it9
+                            .lmhz
+                                img(src='/public/images/cooper/54d17e045571d.jpg')
+                                span 招商湘江
+                            a.border(href='javascript:;')
+                        .lmhz-item.it10
+                            .lmhz
+                                img(src='/public/images/cooper/54d182c5618b1.jpg')
+                                span 兴业银行
+                            a.border(href='javascript:;')
+                        .lmhz-item.it11
+                            .lmhz
+                                img(src='/public/images/cooper/54d182f331033.jpg')
+                                span 招商银行
+                            a.border(href='javascript:;')
+                        .lmhz-item.it12
+                            .lmhz
+                                img(src='/public/images/cooper/54d18157396ff.jpg')
+                                span 中信证券
+                            a.border(href='javascript:;')
+                        .lmhz-item.it0
+                            .lmhz
+                                img(src='/public/images/cooper/54cb1a6b076e9.png')
+                                span 海通证券
+                            a.border(href='javascript:;')
+                    .lmhz-box
+                        .lmhz-item.it1
+                            .lmhz
+                                img(src='/public/images/cooper/54d17f149a7cd.jpg')
+                                span 同创伟业
+                            a.border(href='javascript:;')
+                        .lmhz-item.it2
+                            .lmhz
+                                img(src='/public/images/cooper/54d17eb04ad93.jpg')
+                                span 苏州国发
+                            a.border(href='javascript:;')
+                        .lmhz-item.it3
+                            .lmhz
+                                img(src='/public/images/cooper/54d17e3e04b5c.jpg')
+                                span 中科招商
+                            a.border(href='javascript:;')
+                        .lmhz-item.it4
+                            .lmhz
+                                img(src='/public/images/cooper/54d18253d210d.jpg')
+                                span 中国银行
+                            a.border(href='javascript:;')
+                        .lmhz-item.it5
+                            .lmhz
+                                img(src='/public/images/cooper/54d181a4ae773.jpg')
+                                span 嘉实基金
+                            a.border(href='javascript:;')
+                        .lmhz-item.it6
+                            .lmhz
+                                img(src='/public/images/cooper/54d1817bcfd55.jpg')
+                                span 交银施罗德...
+                            a.border(href='javascript:;')
+
+block script
+    script.
+        $(document).ready(function(){
+            $('.lmhz-slider').bxSlider({
+            controls: false,
+            });
+        });

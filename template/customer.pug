@@ -1,0 +1,168 @@
+extends layout
+
+block vars
+    - let title = '火星人科技'
+
+block content
+    #banner.spch
+        .side-nav
+            a.toggle(href='javascript:;', toggle-status='close')
+                | MENU 
+                i.fa.fa-navicon
+            ul.nav
+                li
+                    a(href='javascript:;') 私募股权投资
+                li
+                    a(href='javascript:;') 私募证券投资
+                li
+                    a(href='javascript:;') 财富管理
+                li
+                    a(href='javascript:;') 互联网金融
+                li
+                    a(href='javascript:;') 融资租赁
+                li
+                    a(href='javascript:;') 产业投资
+                li
+                    a(href='javascript:;') 更多查看
+                li
+                    a.gotop(href='javascript:;')
+                        i.fa.fa-angle-up
+
+    #main1
+        .container
+            .border-radius
+            .heading01
+                h2
+                    span.en.gr PE/VC/MERGERS AND ACQUISITIONS
+                    span.ch
+                        | PE/VC/
+                        b.red 并购业务
+        #box-slider
+            .container
+                .ct
+                    .clearfix
+                        .busbox.col-xs-12.col-sm-4.clearfix(data-mh='bb', style='width:100%;')
+                            a.over(href='javascript:;')
+                            .tb
+                                .tc.pic-icon
+                                    img(src='/public/images/customer/54d08bb3e1cc0.png')
+                                .tc.text
+                                    h3 私募股权投资
+                                    p(style='line-height:30px;color:#111')
+                                        | 公司的专业投资团队从众多优秀的未上市企业中甄选出具有高增长性及上市可能性的企业，并通过项目的尽职调查，进行风控及退出机制设计，并执行、监督和管控整个权益性投资过程。
+                                    a.btn.more.pull-right(style='color:#FFF', href='#')
+                                        | MORE 
+                                        i.fa.fa-angle-double-right
+    #tr-main4.grey-bg
+        .container
+            .heading01
+                h2
+                    span.en.gr PRIVATE EQUITY
+                    span.ch
+                        | 私募
+                        b.red 证券
+            .col-xs-12.col-sm-12.clearfix
+                #main4-banner
+                .heading01
+                    span.tr-des
+                        | 清谷科技投资控股集团有限公司旗下子公司——清谷科技普惠基金管理有限公司有着专业的投资管理团队，其核心成员均来自于国内外一流的基金管理公司、证券公司等金融机构，具有多年的证券、期货和固定收益从业经历，有着资深的从业背景、公司团队结合国内外先进的资产管理理念。主要运用股票、债券、期货、金融衍生品等金融工具，以量化投资为核心构建交易策略模型，结合先进的程序化交易系统实现资产管理业务。公司还与中国社会科学院金融所、数量与技术经济研究所、工业经济研究所及中信证券研究部等科研机构密切合作和构建国...
+                    span.tr-des(style='text-align:right; line-height:20px;margin-top: 15px')
+                        a.btn.more(href='javascript:;')
+                            | MORE 
+                            i.fa.fa-angle-double-right
+    #tr-main2
+        .container
+            .heading01
+                h2
+                    span.en WEALTH MANAGEMENT
+                    span.ch
+                        | 财富
+                        b.red 管理
+            .mediacenter.clearfix
+                .col-xs-12.col-sm-6
+                    .img.zoom
+                        a(href='javascript:;')
+                            img(src='/public/images/customer/54d07e0c0cef2.jpg')
+                .col-xs-12.col-sm-6.box-media
+                    .show-media
+                        h4
+                            a(href='javascript:;') 财富管理
+                        p
+                            | 财富管理是清谷科技投资控股集团有限公司专注于为高净值人群打造的第三方投资理财项目。公司汇聚了业内大批资深的金融理财师和私人银行家。专业的管理团队通过管理个人或机构的财富，对客户的资产进行管理，为客户遴选或量身定制最佳的投资品...
+                        div(style='text-align:right;')
+                            a.btn.more(href='javascript:;')
+                                | MORE 
+                                i.fa.fa-angle-double-right
+    #tr-main5.grey-bg
+        .container
+            .heading01
+                h2
+                    span.en.gr INTERNET  FINANCE
+                    span.ch
+                        | 互联网
+                        b.red 金融
+            .clearfix
+                .busbox.col-xs-12.col-sm-4
+                    .box-container
+                        .box-absolute
+                            .img
+                                img(src='/public/images/customer/bag.jpg')
+                .busbox.col-xs-12.col-sm-4
+                    .box-container
+                        .box-absolute
+                            .img
+                                img(src='/public/images/customer/54d2ec097bd0a.jpg')
+                            .hide-media
+                                a(href='#')
+                                    h4 互联网金融
+                                p(style='font-size: 14px')
+                                    | 清谷科技金融是清谷科技集团旗下的互联网财富管理平台。顺“互联网+”的发展背景而生，充分整合清谷科技集团各业态资源，发挥综合品牌优势，...
+                                    a.more.hidden-sm.hidden-xs(href='javascript:;')
+                                        | MORE 
+                                        i.fa.fa-angle-double-right
+                                a.more.hidden-md.hidden-lg(href='javascript:;')
+                                    | MORE 
+                                    i.fa.fa-angle-double-right
+                .busbox.col-xs-12.col-sm-4
+                    .box-container
+                        .box-absolute
+                            .img
+                                img(src='/public/images/customer/floor.jpg')
+
+    #tr-main6
+        .container
+            .heading01
+                h2
+                    span.en.gr FINANCE LEASE
+                    span.ch
+                        | 融资
+                        b.red 租赁
+            .col-xs-12.col-sm-12.clearfix
+                .heading01
+                    span.tr-des
+                        | 清谷科技投资控股集团有限公司旗下的清谷科技租赁业务特色鲜明，广泛借鉴租赁业的先进经验为客户提供全方位、专业化、多元化的金融服务，促进租赁产业和社会经济的发展。同时，遵循坚持专业发展、坚持服务主业、坚持客户至上、坚持行业定位、坚持差异化发展、坚持风险可控的六项原则，更以“专注金融租赁业发展”为使命，以“抓住历史机遇，创造奇迹，在...
+                    span.tr-des(style='text-align:right; line-height:20px;margin-top: 15px')
+                        a.btn.more(href='javascript:;')
+                            | MORE 
+                            i.fa.fa-angle-double-right
+    #tr-main3.grey-bg
+        .container
+            .heading01
+                h2
+                    span.en.gr INDUSTRIAL  INVESTMENT
+                    span.ch
+                        | 产业
+                        b.red 投资
+            .mediacenter.clearfix
+                .col-xs-12.col-sm-6(data-mh='tr-main3')
+                    .img.zoom
+                        a(href='javascript:;')
+                            img(src='/public/images/customer/54d07fb7cfe28.png')
+                .col-xs-12.col-sm-6
+                    .show-media(data-mh='tr-main3')
+                        p(style='line-height:30px;')
+                            | 产业投资是清谷科技投资控股集团有限公司主要经营项目之一。经过多年的发展和战略布局，打造清谷科技资产管理全产业链的格局基本形成，资本与实体经济的结合才能真正的立于不败之地，让资本真正为实体经济而服务，为此，清谷科技集团除了打造本身的金融板块外，还构建了以集团公司为母公司控股多家实体产业的发展模式，重点挖掘具有高成长性和创新性的企业进...
+                        div(style='text-align:right')
+                            a.btn.more(href='javascript:;')
+                                | MORE 
+                                i.fa.fa-angle-double-right
